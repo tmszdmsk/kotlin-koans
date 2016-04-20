@@ -3,6 +3,7 @@ package iii_conventions
 import iii_conventions.test.s
 import org.junit.Assert.assertTrue
 import org.junit.Test
+import kotlin.comparisons.compareValuesBy
 
 class _25_Comparison {
     @Test fun testDateComparison() {
@@ -21,5 +22,4 @@ class _25_Comparison {
         assertTrue("The date ${first.s} should be after ${second.s}", first > second)
     }
 
-    operator fun MyDate.compareTo(other: MyDate): Int = todoTask25()
 }
